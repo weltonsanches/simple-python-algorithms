@@ -32,7 +32,7 @@ for i in range(len(arr), 10):
   print(', '.join(map(lambda x: str(x), arr_to_show)))
 
 print('Apenas números pares, 10 por linha')
-just_odds = list(filter(lambda x: bool(x), arr2))
-for i in range(len(just_odds), 10):
-  odds_to_show = just_odds[i:(i + 10)]
-  print(', '.join(map(lambda x: str(x), odds_to_show)))
+just_even = list(filter(lambda x: bool(x), arr2))
+for i in range(len(just_even), 10):
+  even_to_show = just_even[i:(i + 10)]
+  print(', '.join(map(lambda x: str(x), even_to_show)))
