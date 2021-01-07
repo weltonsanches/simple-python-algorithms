@@ -15,8 +15,8 @@ def get_value_odd ():
   return value
 
 arr = [None] * 6
-for i in range(0, len(arr)):
+for i in range(len(arr)):
   arr[i] = get_value_odd()
 
 arr.reverse()
-print('arr inverso', arr)
+print(f'arr inverso {arr}')

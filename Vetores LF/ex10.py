@@ -3,7 +3,7 @@
 """
 
 arr = [None] * 10
-for i in range(0, len(arr)):
+for i in range(len(arr)):
   value = int(input('Insira um valor '))
   arr[i] = 0 if value < 0 else value
 

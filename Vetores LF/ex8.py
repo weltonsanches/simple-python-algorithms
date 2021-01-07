@@ -4,7 +4,7 @@ o menor e a média dos valores.
 """
 
 arr = [None] * 5
-for i in range(0, len(arr)):
+for i in range(len(arr)):
   arr[i] = int(input('Insira um valor '))
 
 bigger = None
@@ -21,4 +21,4 @@ for i in range(0, len(arr)):
 
 average = total / len(arr)
 
-print('O maior valor é', bigger, 'o menor valor é', smaller, 'a média dos valores é', average)
+print(f'O maior valor é {bigger}. O menor valor é {smaller}. A média dos valores é {average}')

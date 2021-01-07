@@ -21,18 +21,18 @@ if amount_of_integers > 100:
 
 arr = [None] * 100
 arr2 = [None] * 100
-for i in range(0, amount_of_integers):
+for i in range(amount_of_integers):
   arr[i] = get_value_between_zero_and_fifty()
   if not(arr[i] % 2 == 0):
     arr2[i] = arr[i]
 
 print('Todos os números digitados, 10 por linha')
-for i in range(0, len(arr), 10):
+for i in range(len(arr), 10):
   arr_to_show = arr[i:(i + 10)]
   print(', '.join(map(lambda x: str(x), arr_to_show)))
 
 print('Apenas números pares, 10 por linha')
 just_odds = list(filter(lambda x: bool(x), arr2))
-for i in range(0, len(just_odds), 10):
+for i in range(len(just_odds), 10):
   odds_to_show = just_odds[i:(i + 10)]
   print(', '.join(map(lambda x: str(x), odds_to_show)))

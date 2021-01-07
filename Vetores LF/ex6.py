@@ -3,8 +3,8 @@
 """
 
 arr = [None] * 6
-for i in range(0, len(arr)):
+for i in range(len(arr)):
   arr[i] = int(input('Digite um numero: '))
 
 arr.reverse()
-print('arr inverso', arr)
+print(f'arr reverso {arr}')

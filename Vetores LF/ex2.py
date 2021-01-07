@@ -8,7 +8,7 @@ Mostre na tela cada valor do vetor A, um em cada linha.
 
 a = [1, 0, 5, -2, -5, 7]
 sum_of_some_positions = a[0] + a[1] + a[5]
-print('soma entre os valores das posições A[0], A[1] e A[5] do vetor', sum_of_some_positions)
+print(f'soma entre os valores das posições A[0], A[1] e A[5] do vetor {sum_of_some_positions}')
 a[4] = 100
-for i in range(0, len(a)):
-  print('a', a[i])
+for i in a:
+  print('a', i)

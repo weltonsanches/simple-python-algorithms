@@ -6,7 +6,7 @@ Armazene em uma variável inteira (simples) a soma entre todos os valores do vet
 
 a = [1, 0, 5, -2, -5, 7]
 total = 0
-for i in range(0, len(a)):
+for i in range(len(a)):
   total += a[i]
 
-print('total', total)
+print(f'total {total}')
